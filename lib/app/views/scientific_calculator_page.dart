@@ -5,6 +5,18 @@ import '../controllers/calculator_controller.dart';
 import '../controllers/history_controller.dart';
 import '../widgets/calculator_button.dart';
 
+/// [ScientificCalculatorPage] extends the standard calculator with advanced math functions.
+/// 
+/// Features:
+/// - Trigonometric functions (sin, cos, tan).
+/// - Logarithmic and exponential functions (log, ln, e).
+/// - Mathematical constants (π) and advanced operations (factorial, sqrt, powers).
+/// - Premium UI with gradient badges and custom-styled function buttons.
+/// 
+/// Workflow:
+/// 1. Allows selection of advanced functions which are applied to the current input.
+/// 2. Integrates with the same [CalculatorController] core as the standard mode.
+/// 3. Successful calculations are automatically committed to the global history.
 class ScientificCalculatorPage extends StatelessWidget {
   const ScientificCalculatorPage({super.key});
 

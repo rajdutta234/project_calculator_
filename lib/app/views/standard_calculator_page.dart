@@ -6,6 +6,17 @@ import '../controllers/calculator_controller.dart';
 import '../controllers/history_controller.dart';
 import '../widgets/calculator_button.dart';
 
+/// [StandardCalculatorPage] provides a clean, grid-based interface for daily arithmetic.
+/// 
+/// Features:
+/// - Reactive display showing both active expression and current result.
+/// - Material 3 themed buttons with distinctive colors for operators and actions.
+/// - Integrated with [HistoryController] to persist every successful calculation.
+/// 
+/// Workflow:
+/// 1. User inputs digits and operators via [CalculatorButton]s.
+/// 2. [CalculatorController] evaluates the math expression in real-time.
+/// 3. Upon pressing '=', the final result is calculated, displayed, and saved to history.
 class StandardCalculatorPage extends StatelessWidget {
   const StandardCalculatorPage({super.key});
 

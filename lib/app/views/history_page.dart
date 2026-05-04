@@ -4,6 +4,18 @@ import 'package:google_fonts/google_fonts.dart';
 import '../controllers/history_controller.dart';
 import '../controllers/calculator_controller.dart';
 
+/// [HistoryPage] displays a chronological timeline of all previous calculations.
+/// 
+/// Features:
+/// - List-based view of [HistoryItem]s with relative timestamps.
+/// - Interactive items: Tapping a result brings it back to the active calculator.
+/// - Management tools: Long-press to delete specific items or clear all via the App Bar.
+/// - Empty state handling with helpful illustrations and prompts.
+/// 
+/// Workflow:
+/// 1. Retrieves data reactively from [HistoryController.history].
+/// 2. Formats timestamps dynamically to show relative time (e.g., "5 mins ago").
+/// 3. Navigates the user back to the calculator interface upon result selection.
 class HistoryPage extends StatelessWidget {
   const HistoryPage({super.key});
 

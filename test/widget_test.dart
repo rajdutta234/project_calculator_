@@ -16,7 +16,7 @@ void main() {
 
     // Verify that the calculator displays 0 initially.
     expect(find.text('0'), findsOneWidget);
-    expect(find.text('Naiyo Calculator'), findsOneWidget);
+    expect(find.text('Calculator'), findsOneWidget);
 
     // Test basic calculator functionality
     // Tap the '1' button

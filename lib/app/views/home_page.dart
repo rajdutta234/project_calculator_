@@ -7,6 +7,15 @@ import 'standard_calculator_page.dart';
 import 'scientific_calculator_page.dart';
 import 'history_page.dart';
 
+/// The [HomePage] acts as the main navigation hub and container for the application.
+/// 
+/// It dynamically switches between [StandardCalculatorPage] and [ScientificCalculatorPage]
+/// based on the state in [CalculatorController]. It also manages the persistent 
+/// [CustomBottomNavigationBar] for high-level app navigation.
+/// 
+/// Workflow:
+/// 1. Monitors [calculatorController.isScientific] to decide which calculator to show.
+/// 2. Handles bottom navigation events to toggle modes or navigate to [HistoryPage].
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -16,7 +25,7 @@ class HomePage extends StatelessWidget {
     
     return Scaffold(
       appBar: CustomAppBar(
-        title: 'Naiyo Calculator',
+        title: 'Calculator',
         onModeToggle: () => calculatorController.toggleScientific(),
       ),
       body: Obx(() {

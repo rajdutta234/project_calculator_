@@ -1,6 +1,6 @@
 class AppConstants {
   // App Information
-  static const String appName = 'Naiyo Calculator';
+  static const String appName = 'Calculator';
   static const String appVersion = '1.0.0';
   
   // Calculator Constants
